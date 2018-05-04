@@ -37,7 +37,7 @@ render = (currentTime)->
     surface.move? mouseX, mouseY, worldTime, dt if hasMoved
     surface.simulate? worldTime, dt
 
-  for name, surface of surfaces when surface.doSimulate and surface.doRender
+  for name, surface of surfaces when surface.doRender
     surface.context.clearRect 0, 0, width, height if surface.clear and surface.needsClear
     surface.needsClear = surface.render? surface.context, worldTime, dt
 

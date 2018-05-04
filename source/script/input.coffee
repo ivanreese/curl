@@ -1,4 +1,9 @@
 setupInput = ()->
+  window.addEventListener "click", (e)->
+    running = !running
+    render() if running
+
+
   window.addEventListener "mousemove", (e)->
     hasMoved = true
     mouseX = e.clientX

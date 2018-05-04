@@ -1,8 +1,14 @@
 surfaces =
-  snow:
+  vectors:
+    doSimulate: false
+    doRender: false
+  particles:
     doSimulate: true
     doRender: true
-    # clear: true
+    clear: true
+  simplex:
+    doSimulate: false
+    doRender: false
 
 width = 0
 height = 0
@@ -32,5 +38,14 @@ phasors = {}
 vectorSpacing = 100
 vectors = []
 
-snow = []
-maxSnow = 2000
+snakes = []
+
+# spawnTime = 0
+# spawnInterval = 10
+
+snakes = []
+snakeSpacing = 20
+snakeParticleSpacing = 0.1
+
+velAmt = 20
+curlAmt = 20
