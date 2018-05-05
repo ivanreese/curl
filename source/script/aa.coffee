@@ -1,7 +1,8 @@
 surfaces =
   vectors:
-    doSimulate: false
+    doSimulate: true
     doRender: false
+    clear: true
   particles:
     doSimulate: true
     doRender: true
@@ -22,8 +23,8 @@ lastTime = null
 timeScale = 1
 
 hasMoved = false
-mouseX = 0
-mouseY = 0
+mouseX = -1000
+mouseY = -1000
 lastMouseX = null
 lastMouseY = null
 mouseDx = null
@@ -35,17 +36,17 @@ phasorComplexityTuning = 1/50
 
 phasors = {}
 
-vectorSpacing = 100
+vectorSpacing = 5
 vectors = []
 
 snakes = []
 
-# spawnTime = 0
-# spawnInterval = 10
+spawnTime = 0
+spawnInterval = 1
 
 snakes = []
 snakeSpacing = 20
 snakeParticleSpacing = 0.1
 
-velAmt = 20
-curlAmt = 20
+velAmt = 0
+curlAmt = 0
